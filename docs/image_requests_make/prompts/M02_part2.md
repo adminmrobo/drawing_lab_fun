@@ -4,14 +4,14 @@
 
 ---
 ## p2_moa_lookup_styles_b
-alt: 세 화풍의 모아가 정면·옆·내려다보기로 각도가 제각각인 비교 그림
+alt: B 결과 — 왼쪽은 정면, 가운데는 옆모습(위를 봄), 오른쪽은 위에서 내려다본 모아
 ```
 Same image. Change only: draw each style from a different camera angle — left from the front at eye level, center from the side, right looking down from above. Remove the construction lines. Still no text.
 ```
 
 ---
 ## p2_moa_deadpan_b
-alt: 모아도 주판봇처럼 크게 비명을 지르는 비교 그림
+alt: B 결과 — 페인트를 뒤집어쓴 모아가 눈물을 흘리며 크게 비명, 주판봇도 놀람
 ```
 Same image, keep the same framing. Change only: Moa screams with a huge open mouth, wide eyes and tears, just as panicked as the robot. Still no text.
 ```

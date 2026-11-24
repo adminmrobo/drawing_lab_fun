@@ -4,14 +4,14 @@
 
 ---
 ## p6_f1_fixed_b
-alt: 머리 위 컵이 사라져 그냥 컵을 든 하루로 돌아간 비교 그림
+alt: B 결과 — 두 장면 모두 하루가 컵을 손에 들고 걷기만 함
 ```
 Same image, keep the same framing. Change only: remove the cup from her head; she simply stands holding the cup in her hands, smiling. Still no text.
 ```
 
 ---
 ## p6_f7_fixed_b
-alt: 세 순간이 한 장면에 겹쳐 무슨 일인지 읽기 어려운 비교 그림
+alt: B 결과 — 한 장면에서 공이 닿고, 박사가 비명을 지르고, 안경이 날아가는 일이 동시에 일어남
 ```
 Same scene. Change only: merge the three moments into ONE single panel where the ball hits, he screams and the glasses fly away all at the same instant. Still no text.
 ```

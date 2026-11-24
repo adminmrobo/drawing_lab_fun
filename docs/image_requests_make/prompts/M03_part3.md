@@ -4,14 +4,14 @@
 
 ---
 ## p3_sia_jump_keys_b
-alt: 웅크리는 자세가 빠지고 서기 → 공중 → 착지 세 장인 비교 그림
+alt: B 결과 — 서기 → 공중 → 웅크린 착지 세 장, 뛰기 전 웅크림이 빠짐
 ```
 Same image, keep the same framing. Change only: remove the crouching pose; show standing, then directly high in the air, then landing — three poses. Still no text.
 ```
 
 ---
 ## p3_doctor_bounce_keys_b
-alt: 늘어날 때도 폭이 그대로라 공이 커 보이는 비교 그림
+alt: B 결과 — 떨어지는 공은 길고, 머리 위 공은 납작해지지 않고 세로로 긴 타원 그대로
 ```
 Same image, keep the same framing. Change only: the falling ball stretches taller but keeps its full round width, and the squashed ball keeps its full height, so the ball looks bigger in those moments. Still no text.
 ```

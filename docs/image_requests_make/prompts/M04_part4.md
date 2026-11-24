@@ -4,14 +4,14 @@
 
 ---
 ## p4_comic_cake_b
-alt: 케이크가 머리에 얹힌 결과가 첫 컷에 오도록 순서를 바꾼 비교 그림
+alt: B 결과 — 첫 컷이 케이크를 머리에 얹은 주판봇, 이어서 완성·운반·넘어짐
 ```
 Same comic, keep the same style. Change only: reorder the panels so the cake on the robot's head comes first, followed by finishing the cake, carrying it, and tripping. Still no text.
 ```
 
 ---
 ## p4_comic_three_b
-alt: 세 장면의 카메라 각도가 모두 다른 비교 그림
+alt: B 결과 — 첫 장면은 시아 얼굴 클로즈업, 둘째는 위에서 본 장면, 셋째는 옆모습으로 구도가 모두 다름
 ```
 Same comic. Change only: each of the three panels uses a very different camera angle (close-up, wide shot from above, side view). Still no text.
 ```

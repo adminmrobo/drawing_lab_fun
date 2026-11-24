@@ -13,7 +13,7 @@
 
 ---
 ## 1) p3_sia_jump_keys
-alt: 시아가 서기 → 깊이 웅크리기 → 높이 뛰기 → 착지 네 열쇠 그림을 나란히 그린 SD 동작 그림
+alt: SD 시아 네 동작 — 서기, 깊이 웅크리기, 두 팔 들고 뛰어오르기, 무릎 굽혀 착지. 같은 바닥선
 첨부: refs/sia_anime_base.png, refs/sia_sheet.png
 ```
 Illustration, wide 16:9.
@@ -32,7 +32,7 @@ Use the attached image of Sia standing as the first frame. 3-second animation, S
 
 ---
 ## 2) p3_doctor_bounce_keys
-alt: 분홍 고무공이 떨어지며 가늘게 늘어나고, 박사 머리에서 넓게 찌그러지고, 다시 튀어 오르는 세 순간 — 박사는 굳은 무표정
+alt: 분홍 고무공 세 순간 — 가늘게 늘어나 떨어지는 공, 박사 머리 위에 납작하게 찌그러진 공, 다시 동그랗게 튀어 오르는 공. 세 번째 박사는 무표정으로 굳어 있음
 첨부: refs/doctor_sheet.png
 ```
 Illustration, wide 16:9.
@@ -51,7 +51,7 @@ Use the attached image as the first frame. 3-second animation, fixed camera, pla
 
 ---
 ## 3) p4_comic_cake
-alt: 4컷 만화(글자 없음): 하루가 케이크 완성 → 조심조심 들고 감 → 전선에 걸려 넘어짐 → 케이크가 주판봇 머리 위에 똑바로 얹힘
+alt: 4컷 만화(빈 말풍선): 하루가 케이크 완성 → 들고 걸어감 → 전선에 걸려 케이크가 날아감 → 케이크가 주판봇 머리 위에 얹히고 하루는 바닥에 엎드림
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png, refs/jupanbot_ref_genspark_v0.png
 ```
 Illustration, wide 16:9, a four-panel comic strip arranged left to right, panels separated by white gutters.
@@ -65,7 +65,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 4) p4_comic_three
-alt: 같은 구도의 세 장면: 시아가 문을 열면 빈 방 → 다시 빈 방 → 세 번째에 주판봇이 문 앞에서 손을 흔듦
+alt: 같은 구도 세 장면: 시아가 문을 열면 빈 방 → 다시 빈 방 → 세 번째에는 문 뒤에 주판봇이 손을 흔들며 서 있음
 첨부: refs/sia_anime_base.png, refs/sia_sheet.png, refs/jupanbot_ref_genspark_v0.png
 ```
 Illustration, wide 16:9, three panels side by side separated by white gutters.

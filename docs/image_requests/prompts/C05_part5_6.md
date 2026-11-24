@@ -13,7 +13,7 @@
 
 ---
 ## 1) p5_lab_reaction_sheet
-alt: 연구실 SD 리액션 스티커 2×2 — 하루(눈만 크게 놀람), 시아(데드팬), 모아(땀방울 하나), 박사(굳어서 안경이 살짝 뜸)
+alt: 연구실 SD 리액션 2×2 — 하루(눈을 크게 뜨고 놀람), 시아(눈 감은 무표정), 모아(땀방울 하나에 당황), 박사(흰 눈으로 굳고 안경이 위로 뜸)
 첨부: refs/haru_sheet.png, refs/sia_sheet.png, refs/moa_sheet.png, refs/doctor_sheet.png
 ```
 Illustration, wide 16:9, a two-by-two sheet of reaction stickers.
@@ -27,7 +27,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 2) p5_haru_loop_keys
-alt: SD 하루가 리듬에 맞춰 고개를 왼쪽 → 가운데 → 오른쪽 → 가운데로 까딱이는 반복 영상 열쇠 그림 네 장
+alt: SD 하루가 주먹을 쥐고 리듬을 타는 네 열쇠 그림, 음표가 떠 있음 — 네 장의 고개 기울기 차이는 아주 작음
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png
 ```
 Illustration, wide 16:9.
@@ -46,7 +46,7 @@ Use the attached image of Haru with her head upright as both the first and the l
 
 ---
 ## 3) p6_f1_fixed
-alt: 하루가 컵을 든 듯 조심조심 걷는데, 커피잔이 이미 머리 위 번에 거꾸로 얹혀 있고 하루는 눈치채지 못한 SD 그림
+alt: 두 장면: 왼쪽은 하루가 커피잔을 들고 걷고, 화살표 오른쪽에서는 손은 그대로인데 컵이 머리 위 번 사이에 거꾸로 얹혀 있음 — 하루는 모르는 표정
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png
 ```
 Illustration, wide 16:9.
@@ -60,7 +60,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 4) p6_f7_fixed
-alt: 세 장면: 고무공이 박사 머리에 찌그러짐 → 박사가 무표정으로 굳음 → 안경이 위로 튐
+alt: 세 장면: 고무공이 박사 머리에 부딪혀 얼굴을 찡그림 → 공을 얹은 채 무표정으로 굳음(땀 한 방울) → 안경이 위로 튀어 오름
 첨부: refs/doctor_sheet.png
 ```
 Illustration, wide 16:9, three panels side by side separated by white gutters.

@@ -4,7 +4,7 @@
 
 ---
 ## d1_haru_hot
-alt: SD 하루가 뜨거운 커피를 마시고 입만 크게 벌린 채 혀를 내민 그림, 김 한 줄기
+alt: SD 하루가 머그잔을 든 채 혀를 내밀고 입을 크게 벌렸고, 입가에 김 한 줄기
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png
 ```
 Illustration, wide 16:9.
@@ -18,7 +18,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## d2_sia_lookup
-alt: SD 시아가 고개를 젖혀 천장을 올려다보고, 물방울 하나가 이마로 떨어지는데 완전히 무표정한 그림
+alt: SD 시아가 고개를 젖혀 위를 보고, 이마 위로 물방울 하나가 떨어지는데 눈을 감은 무표정
 첨부: refs/sia_anime_base.png, refs/sia_sheet.png
 ```
 Illustration, wide 16:9.
@@ -32,7 +32,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## d3_moa_squash
-alt: 왼쪽은 놀라서 얼굴이 위로 가늘게 늘어난 SD 모아, 오른쪽은 아래로 넓게 찌그러진 SD 모아
+alt: 왼쪽은 놀라서 입을 벌린 SD 모아, 오른쪽은 두 손으로 볼을 감싼 모아
 첨부: refs/moa_anime_base.png, refs/moa_sheet.png
 ```
 Illustration, wide 16:9, two frames side by side.
@@ -46,7 +46,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## d4_lab_zoomout
-alt: 왼쪽 컷은 조용히 책 읽는 모아의 클로즈업, 오른쪽 컷은 줌 아웃해 바로 옆에서 주판봇이 북을 치는 장면
+alt: 왼쪽은 책을 읽는 모아의 클로즈업, 오른쪽은 넓게 빠져 바로 옆에서 주판봇이 드럼을 치는 장면
 첨부: refs/moa_anime_base.png, refs/moa_sheet.png, refs/jupanbot_ref_genspark_v0.png
 ```
 Illustration, wide 16:9, two panels side by side separated by a white gutter.
@@ -60,7 +60,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## d5_doctor_sticker
-alt: 박사가 무표정한 얼굴로 서 있고 머리 위에 세로줄 그늘 세 줄만 있는 정사각형 SD 스티커
+alt: 흰 테두리 정사각형 스티커 — 박사가 안경 너머로 눈을 감은 무표정, 머리 위에 세로줄 세 개
 첨부: refs/doctor_sheet.png
 ```
 Illustration, square 1:1 sticker.
@@ -74,7 +74,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## d6_moa_ribbon_fix
-alt: 부분 수정으로 흰 리본이 모아의 왼쪽 귀 위(그림에서는 오른쪽)로 옮겨진 SD 모아
+alt: 회색 바탕의 모아 설정 시트 — 정면·옆·뒷모습·얼굴과 색 견본, 정면에서 흰 리본이 그림 오른쪽(모아의 왼쪽 귀 위)에 있음
 첨부: refs/moa_anime_base.png, refs/moa_sheet.png
 ```
 Inpainting request (부분 수정): paint the mask only over Moa's hair area above BOTH ears, then use this text:

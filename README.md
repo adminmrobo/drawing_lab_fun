@@ -27,6 +27,6 @@ python3 -m http.server 8765 &   # 아래 두 점검용
 python3 build/check_pages.py && python3 build/check_missions.py
 grep -o "칸\|사다리\|관통" -r *.html practice/*.html   # 금지어 0건
 ```
-작성 방침: `docs/WRITING_POLICY.md` · 그림 46장은 아직 '그림 준비 중'(요청문: `docs/image_requests/` 28장, `docs/image_requests_make/` 비교 12장, `docs/image_requests_drill/` 연습 6장, 전체 zip `docs/구조먼저그리기연구실_웃음편_그림요청_전체.zip`) · 페르소나 검사: `docs/persona_review.md`
+작성 방침: `docs/WRITING_POLICY.md` · 그림 46장(Genspark, 2026-11-25 반영, `assets/img/`) · 요청문: `docs/image_requests/` 28장, `docs/image_requests_make/` 비교 12장, `docs/image_requests_drill/` 연습 6장, 전체 zip `docs/구조먼저그리기연구실_웃음편_그림요청_전체.zip` · 실제 그림 설명과 '실제 결과'는 `build/content_make.py`(ALT·BALT·RES·DRILL_REAL), 실패 그림은 `build/content_b.py` · 페르소나 검사: `docs/persona_review.md`
 
 캐릭터 이름·설정·그림은 저작권자 안상선의 허락 없이 사용할 수 없습니다. 캐릭터 그림: [fruitfly-lab-expressions](https://github.com/adminmrobo/fruitfly-lab-expressions).

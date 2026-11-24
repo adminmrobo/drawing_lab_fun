@@ -15,7 +15,7 @@
 
 ---
 ## 1) f1_fail
-alt: SD 하루가 커피잔을 들고 그냥 서 있는, 무슨 일이 일어났는지 보이지 않는 그림
+alt: SD 하루가 테이크아웃 커피잔을 들고 활짝 웃으며 서 있을 뿐, 아무 일도 일어나지 않은 그림
 ```
 Illustration, tall 2:3 portrait.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.
@@ -28,7 +28,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 2) f2_fail
-alt: SD 모아의 놀란 얼굴 — 눈·입·눈썹·땀방울·머리카락이 모두 크게 부풀어 시끄러운 그림
+alt: SD 모아의 놀란 얼굴 — 눈·입·땀·부푼 머리카락에 번개와 반짝이까지 한꺼번에 커서 시끄러운 그림
 ```
 Illustration, tall 2:3 portrait.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.
@@ -41,7 +41,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 3) f3_fail
-alt: 시아가 4.5등신 정도의 어중간한 비율로 그려진 개그 장면 — 팔다리가 애매하게 긺
+alt: 시아가 바나나 껍질에 미끄러지는 장면 — 요청한 4.5등신이 아니라 6~7등신의 보통 애니풍 비율로 나옴
 ```
 Illustration, tall 2:3 portrait.
 Art style: high-quality anime illustration, clean confident lineart, two-tone cel shading, awkward in-between proportions about 4.5 heads tall.
@@ -53,7 +53,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 4) f4_fail
-alt: 시아가 똑바로 선 그림 다음에 바로 공중에 뜬 그림이 이어지는 두 장면 — 웅크리는 장면이 없음
+alt: 위는 똑바로 선 SD 시아, 아래는 같은 자세 그대로 공중에 떠 있는 시아 — 웅크리는 장면 없음
 ```
 Illustration, tall 2:3 portrait, two frames stacked top and bottom.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.

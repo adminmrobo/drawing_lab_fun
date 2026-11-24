@@ -15,7 +15,7 @@
 
 ---
 ## 1) f5_fail
-alt: 분홍 고무공이 떨어지며 세로로 길어졌는데 폭은 그대로라 커 보이는 동작 그림
+alt: 박사 머리 위로 떨어지는 분홍 고무공이 세로로 길면서 폭도 넓어 보통 공보다 훨씬 커 보이는 그림
 ```
 Illustration, tall 2:3 portrait.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.
@@ -28,7 +28,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 2) f6_fail
-alt: 4컷 만화의 첫 컷에 이미 케이크가 주판봇 머리 위에 얹혀 있고, 뒤 컷들이 거꾸로 사연을 보여 주는 그림
+alt: 세로 4컷 — 첫 컷에 이미 케이크를 머리에 얹은 주판봇, 이어서 케이크 만들기·운반·넘어지기(빈 말풍선)
 ```
 Illustration, tall 2:3 portrait, a four-panel comic stacked top to bottom.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.
@@ -41,7 +41,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 3) f7_fail
-alt: 공이 박사 머리에 닿는 장면과 안경이 날아가는 장면이 한 그림에 겹쳐 그려진 SD 그림
+alt: 공이 박사 머리에 닿는 순간 박사는 비명을 지르고 안경은 이미 날아가는 한 장면
 ```
 Illustration, tall 2:3 portrait.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.
@@ -54,7 +54,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 4) f8_fail
-alt: SD 모아 리액션 네 장 — 컷마다 머리색과 리본 위치가 조금씩 달라진 그림
+alt: SD 모아 네 장 — 회갈색·갈색·금발 두 장으로 머리색이 바뀌고, 눈 색도 갈색·파랑·초록으로 달라진 그림
 ```
 Illustration, tall 2:3 portrait, four small reaction panels in a two-by-two grid.
 Art style: cute super-deformed comedy anime style, about 2.5 heads tall, clean bold lineart, flat cel colors with one soft shadow tone.

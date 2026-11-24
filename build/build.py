@@ -8,7 +8,7 @@ ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 from content_meta import SITE, CH, REFS, PARTS_ORDER, ABBR
 from content_a import PART1, PART2, PART3
 from content_b import PART4, PART5, PART6
-from content_make import MAKE, DRILL
+from content_make import MAKE, DRILL, ALT
 from content_index import INDEX, PRACTICE
 
 PARTS = {p['key']: p for p in [PART1, PART2, PART3, PART4, PART5, PART6]}
@@ -154,7 +154,7 @@ def step(p, i, s):
     h.append(panel(s['panel']))
     h.append('<div class="solve"><h4>풀이</h4>%s</div>' % ''.join('<p>%s</p>' % x for x in s['solve']))
     if s.get('img'):
-        h.append(figure(s['img'][0], s['img'][1]))
+        h.append(figure(s['img'][0], ALT.get(s['img'][0], s['img'][1])))
     h.append('<div class="solve"><h4>AI 결과, 그대로 써도 될까?</h4><p>%s</p><details class="code"><summary>답 보기</summary><p>%s</p></details></div>' % s['ai'])
     h.append('<div class="limit"><b>주의할 점</b> — %s</div>' % s['limit'])
     h.append(quizbox(s['quiz']))
@@ -169,17 +169,17 @@ def make_section(p):
     n = p['num']
     from make_requests import prompt_of
     h = ['<section class="room" id="make"><div class="wrap"><div class="roomno">%d부 · 직접 만들기</div><h2>프롬프트로 직접 만들어 보기</h2>' % n]
-    h.append('<div class="box"><p>이 부에서 배운 원리를 그림 생성 AI(Genspark 등)로 직접 확인합니다. <b>A</b>는 이 페이지 그림을 만들 때 쓰는 프롬프트, <b>B</b>는 원리를 하나 빼거나 바꾼 비교용 문장입니다.</p>'
+    h.append('<div class="box"><p>이 부에서 배운 원리를 그림 생성 AI(Genspark 등)로 직접 확인합니다. <b>A</b>는 이 페이지 그림을 실제로 만든 프롬프트, <b>B</b>는 원리를 하나 빼거나 바꾼 비교용 문장입니다.</p>'
              '<ol style="margin:6px 0 0;padding-left:20px"><li>새 대화를 열고 아래 \'첨부\'에 적힌 참고 그림을 올립니다.</li><li>A를 붙여 넣어 만들고, 확인표로 결과를 점검합니다.</li>'
              '<li>같은 대화에 B를 이어 붙여 다시 만들고, A 결과와 나란히 비교합니다. 구도가 흔들리면 \'keep the same framing\'을 덧붙입니다.</li><li>같은 대화에서 차이가 약하면 새 대화에서 처음부터 만들어 보세요. 결과는 매번 다릅니다.</li></ol>'
              '<p class="hint" style="margin-top:8px">참고 그림 내려받기: %s</p></div>' % ' · '.join('<a href="assets/refs/%s.png" download>%s</a>' % (r, r) for r in REFLINKS))
     for j, m in enumerate(MAKE[p['key']]):
         A = prompt_of(m['img'])
         h.append('<div class="failcard" id="make%d"><h3>실습 %d · %s</h3><p>%s</p>' % (j + 1, j + 1, m['title'], m['desc']))
-        h.append('<div class="pair"><div class="promptbox"><b>A — 이 페이지 그림을 만드는 프롬프트</b><p class="hint">첨부: %s</p><pre>%s</pre><button type="button" class="btn copy">복사하기</button></div><div>%s</div></div>'
-                 % (', '.join('refs/%s.png' % r for r in m['refs']), E(A), figure(m['img'], m['alt'], cap='A 결과 — Genspark로 만들 그림')))
+        h.append('<div class="pair"><div class="promptbox"><b>A — 이 페이지 그림을 실제로 만든 프롬프트</b><p class="hint">첨부: %s</p><pre>%s</pre><button type="button" class="btn copy">복사하기</button></div><div>%s</div></div>'
+                 % (', '.join('refs/%s.png' % r for r in m['refs']), E(A), figure(m['img'], m['alt'], cap='A 결과 — Genspark로 만든 그림')))
         h.append('<div class="pair"><div class="promptbox"><b>B — %s</b><pre>%s</pre><button type="button" class="btn copy">복사하기</button></div><div>%s</div></div>'
-                 % (m['btitle'], E(m['b']), figure(m['img'] + '_b', m['balt'], cap='B 결과')))
+                 % (m['btitle'], E(m['b']), figure(m['img'] + '_b', m['balt'])))
         h.append('<h4>결과에서 확인할 것</h4><ol>%s</ol>' % ''.join('<li>%s <a href="#%s">원리 보기</a></li>' % (c, a) for c, a in m['check']))
         if m.get('video'):
             h.append('<div class="promptbox"><b>더 해 보기 — 움직이는 그림으로(영상 AI)</b><p class="hint">A 결과 그림을 첨부하고 이미지→영상 기능에 넣습니다. 길이 2~4초, 처음과 끝 장면이 같으면 반복 재생이 매끄럽습니다.</p><pre>%s</pre><button type="button" class="btn copy">복사하기</button></div>' % E(m['video']))
@@ -199,10 +199,12 @@ def drill_section(p):
         h.append('<p class="hint">첨부할 참고 그림: %s — 참고 그림은 위 <a href="#make">직접 만들어 보기</a>에서 내려받을 수 있습니다.</p>' % ', '.join('refs/%s.png' % r for r in d['refs']))
         h.append('<h4>순서</h4><ol>%s</ol>' % ''.join('<li>%s</li>' % x for x in d['steps']))
         h.append('<h4>넣을 프롬프트와 예상 결과</h4><div class="pair"><div class="promptbox"><b>넣을 프롬프트</b><pre>%s</pre><button type="button" class="btn copy">복사하기</button></div><div>%s</div></div>'
-                 % (E(drill_prompt(d['img'])), figure(d['img'], d['alt'], cap='예상 결과 — 위 프롬프트로 만들 그림')))
+                 % (E(drill_prompt(d['img'])), figure(d['img'], d['alt'], cap='예상 결과 — 위 프롬프트로 실제로 만든 그림')))
         h.append('<h4>확인할 것</h4><ol>%s</ol>' % ''.join('<li>%s <a href="#%s">원리 보기</a></li>' % (c, a) for c, a in d['check']))
         h.append('<p><span class="chip">예상 결과</span>%s</p>' % d['expect'])
         h.append('<h4>자주 생기는 문제와 대처</h4><div class="tbl"><table><thead><tr><th>문제</th><th>대처</th></tr></thead><tbody>%s</tbody></table></div>' % ''.join('<tr><td>%s</td><td>%s</td></tr>' % x for x in d['trouble']))
+        if d.get('real'):
+            h.append('<p style="background:#fff7ec;border-left:4px solid var(--orange);padding:8px 12px;border-radius:6px">실제 결과: %s</p>' % d['real'])
         h.append('<p><span class="chip">더 해 보기</span>%s</p></div>' % d['more'])
     h.append('</div></section>')
     return '\n'.join(h)
@@ -267,6 +269,8 @@ def fails_section(p):
         h.append('<div><p><span class="chip">증상</span>%s</p>' % f['sym'])
         h.append(quizbox(dict(q='처음 걸리는 점검 항목은?', o=[p['check'][x] for x in opts], a=opts.index(first), ok=f['note'], no='점검표를 위에서부터 짚어 보세요.')))
         h.append('<p><span class="chip">연결된 원리</span><a href="%s">%s</a></p>' % f['link'])
+        if f.get('real'):
+            h.append('<p class="hint">%s</p>' % f['real'])
         h.append('<div class="promptbox"><b>고치는 프롬프트 조각</b><pre>%s</pre><button type="button" class="btn copy">복사하기</button></div></div></div></div>' % E(f['fix']))
     h.append('</div></section>')
     return '\n'.join(h)

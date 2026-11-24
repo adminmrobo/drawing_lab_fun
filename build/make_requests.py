@@ -223,7 +223,7 @@ def write_bundle():
         w = csv.writer(f)
         w.writerow(['order', 'conversation', 'file', 'page', 'ratio', 'style', 'status'])
         for r in rows1:
-            w.writerow(list(r) + ['todo'])
+            w.writerow(list(r) + ['done'])
     open(os.path.join(D1, 'README.md'), 'w').write(README1 % len(rows1))
 
     rows2 = []
@@ -239,7 +239,7 @@ def write_bundle():
         w = csv.writer(f)
         w.writerow(['order', 'conversation', 'file', 'page', 'ratio', 'how', 'status'])
         for r in rows2:
-            w.writerow(list(r) + ['todo'])
+            w.writerow(list(r) + ['done'])
     open(os.path.join(D2, 'README.md'), 'w').write(README2 % len(rows2))
 
     rows3 = []
@@ -252,7 +252,7 @@ def write_bundle():
         w = csv.writer(f)
         w.writerow(['order', 'conversation', 'file', 'page', 'ratio', 'how', 'status'])
         for r in rows3:
-            w.writerow(list(r) + ['todo'])
+            w.writerow(list(r) + ['done'])
     open(os.path.join(D3, 'README.md'), 'w').write('# 그림 요청 꾸러미 3 — 연습 과제 예상 결과 (%d장)\n\n각 부 \'프롬프트 연습 과제\'의 예상 결과 그림입니다. 과제 프롬프트를 **새 대화**에서 그대로 넣어 만듭니다. 받으면 `checklist.csv` 이름 그대로 주세요.\n' % len(rows3))
 
     zp = os.path.join(ROOT, 'docs', '구조먼저그리기연구실_웃음편_그림요청_전체.zip')

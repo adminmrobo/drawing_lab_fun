@@ -13,7 +13,7 @@
 
 ---
 ## 1) p1_haru_sd_compare
-alt: 왼쪽은 7등신 하루가 진지하게 커피잔을 들고 서 있고, 오른쪽은 같은 옷의 2.5등신 하루가 커피잔을 놓칠 뻔해 허둥대는 비교 그림
+alt: 왼쪽은 7등신 하루가 커피잔을 들고 차분히 서 있고, 오른쪽은 같은 옷의 SD(약 3.5등신) 하루가 커피잔을 놓쳐 허둥대는 그림
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png
 ```
 Illustration, wide 16:9.
@@ -26,7 +26,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 2) p1_haru_exag_eyes
-alt: 하루의 SD 얼굴 세 장 — 눈만 크게 키운 놀람, 입만 크게 키운 "앗 뜨거", 모든 부위를 같이 키워 오히려 덜 놀라 보이는 얼굴
+alt: SD 하루 얼굴 세 장 — 왼쪽은 작게 벌린 입의 놀람, 가운데는 눈을 질끈 감고 입만 크게 벌린 "앗 뜨거"(머그잔), 오른쪽은 눈·입·땀을 모두 키운 얼굴
 첨부: refs/haru_anime_base.png, refs/haru_sheet.png
 ```
 Illustration, wide 16:9.
@@ -40,7 +40,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 3) p2_moa_lookup_styles
-alt: 모아가 천장을 올려다보는 같은 포즈를 반실사·애니풍·SD 세 화풍으로 나란히 그린 그림, 세 그림에 같은 위치의 연한 기준선
+alt: 천장을 올려다보는 모아 세 장 — 왼쪽 반실사풍, 가운데 애니풍, 오른쪽 둥근 SD풍. 셋 다 턱을 들고 위를 보며, 요청한 연한 기준선은 그려지지 않음
 첨부: refs/moa_anime_base.png, refs/moa_sheet.png
 ```
 Illustration, wide 16:9.
@@ -53,7 +53,7 @@ No text, no letters, no numbers, no speech-bubble text, no logos, no watermark, 
 
 ---
 ## 4) p2_moa_deadpan
-alt: 모아가 머리부터 연한 분홍 페인트를 뒤집어쓰고도 눈을 가로선으로 한 무표정으로 서 있고, 옆에서 주판봇이 크게 놀라는 SD 그림
+alt: SD 모아가 분홍 페인트를 머리부터 뒤집어쓰고 눈을 가로선으로 감은 무표정, 옆에서 주판봇이 두 팔을 들고 놀라는 그림
 첨부: refs/moa_anime_base.png, refs/moa_sheet.png, refs/jupanbot_ref_genspark_v0.png
 ```
 Illustration, wide 16:9.
