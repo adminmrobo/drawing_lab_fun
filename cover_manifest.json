@@ -1,0 +1,63 @@
+{
+  "series_ko": "연구실 특별편 · 그리기와 렌더링",
+  "title_ko": "구조 먼저 그리기 연구실 · 웃음 편",
+  "site_url": "https://adminmrobo.github.io/drawing_lab_fun/",
+  "site_title": "구조 먼저 그리기 연구실 · 웃음 편 — 같은 구조, 웃기는 변형",
+  "version": "v1.0",
+  "date": "2026-11-25",
+  "ontology": {
+    "pages": [
+      {
+        "path": "index.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "01_exaggeration.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "02_reaction.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "03_motion.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "04_comic.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "05_ai_fun.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "06_failure_lab.html",
+        "kg": true,
+        "export": true
+      },
+      {
+        "path": "practice/index.html",
+        "kg": true,
+        "export": true
+      }
+    ]
+  },
+  "covers": {
+    "cover_index": false,
+    "cover_01": false,
+    "cover_02": false,
+    "cover_03": false,
+    "cover_04": false,
+    "cover_05": false,
+    "cover_06": false,
+    "cover_07": false
+  },
+  "images_received": []
+}
