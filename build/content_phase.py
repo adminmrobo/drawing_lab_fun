@@ -100,6 +100,7 @@ def prologue_html(figure, talk):
              '<button type="button" class="btn" data-act="zap">빨간 버튼 누르기</button></div><div class="readout" aria-live="polite"></div></div>')
     h.append('<h3>사고 기록 — 이 사람, 같은 사람인가요?</h3><p>전환기 다이얼에 하루·시아·모아·박사의 네 가지 위상을 나란히 걸어 보았습니다. 모습은 넷이지만 고정값은 그대로라 모두 같은 사람으로 보여야 합니다.</p>')
     h.append('<div class="pair">%s%s</div><div class="pair">%s%s</div>' % tuple(figure(k, PH_ACTUAL[k]) for k in ('ph_lineup_haru', 'ph_lineup_sia', 'ph_lineup_moa', 'ph_lineup_doc')))
+    h.append('<p style="background:#fff7ec;border-left:4px solid var(--orange);padding:8px 12px;border-radius:6px">실제 결과: 네 위상 나란히 네 장은 픽셀·SD·애니·반실사가 분명히 나뉘고, 넷 모두 고정값이 지켜져 같은 사람으로 읽힙니다. 한 그림 안에 패널을 나란히 요청한 방식이 이번에도 가장 잘 통했습니다. 맨 위 대표 그림은 하루의 픽셀풍이 가장자리만 살짝 깨진 정도이고 모아는 반실사가 아니라 보통 애니풍으로 나왔습니다 — 한 장 안에 그림체를 섞으면 도구가 가운데 그림체로 끌어당기는 경향이 있습니다. 위상 붕괴 그림은 거울 속 모습만 고정값이 바뀌어 의도대로 다른 사람이 되었습니다.</p>')
     h.append('<h3>위상 붕괴 — 고정값까지 바뀌어 버린 날</h3>'
              '<p>버튼을 너무 세게 누른 날에는 고정값까지 바뀌었습니다. 이때는 위상이 바뀐 것이 아니라 <b>다른 사람</b>이 된 것입니다. 실제로 이 사이트에도 그런 그림이 두 장 있습니다: '
              '<a href="05_ai_fun.html#make1">5부 리액션 짤 B</a>(참고 그림 없이 만들었더니 네 명 모두 다른 사람)와 <a href="06_failure_lab.html#f8">6부 f8 컷마다 다른 얼굴</a>(모아의 머리색·눈 색이 컷마다 바뀜).</p>')
