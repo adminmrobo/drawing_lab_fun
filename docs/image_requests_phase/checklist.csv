@@ -1,0 +1,8 @@
+order,conversation,file,page,ratio,how,status
+1,P01_phase_key_lineup,ph_key,index.html#phase,16:9,mixed styles,todo
+2,P01_phase_key_lineup,ph_lineup_haru,index.html#phase,16:9,mixed styles,todo
+3,P01_phase_key_lineup,ph_lineup_sia,index.html#phase,16:9,mixed styles,todo
+4,P01_phase_key_lineup,ph_lineup_moa,index.html#phase,16:9,mixed styles,todo
+5,P02_phase_lineup_collapse,ph_lineup_doc,index.html#phase,16:9,mixed styles,todo
+6,P02_phase_lineup_collapse,ph_collapse,index.html#phase,16:9,mixed styles,todo
+7,P02_phase_lineup_collapse,ph_restore,index.html#phase,16:9,mixed styles,todo

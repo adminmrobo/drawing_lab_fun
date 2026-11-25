@@ -10,6 +10,7 @@ from content_a import PART1, PART2, PART3
 from content_b import PART4, PART5, PART6
 from content_make import MAKE, DRILL, ALT
 from content_index import INDEX, PRACTICE
+from content_phase import prologue_html, NOTICE
 
 PARTS = {p['key']: p for p in [PART1, PART2, PART3, PART4, PART5, PART6]}
 E = html.escape
@@ -292,6 +293,7 @@ def build_part(p):
     h = [head(title, p['desc'], 'og_%02d' % n, p['file']), nav(links)]
     h.append(cover('cover_%02d' % n, p['cover_alt'], p['cast']))
     h.append('<header class="hero"><div class="wrap"><span class="kicker">%s</span><h1>%s</h1><p class="lead">%s</p>\n%s</div></header>\n' % (p['kicker'], p['title'], p['lead'], byline()))
+    h.append(NOTICE % '')
     h.append(three_box(p))
     h.append('<section><div class="wrap"><h2>오늘의 과제</h2>%s%s</div></section>\n' % (talk(p['task']), flowgrid(p['file'])))
     if p['key'] == 'p6':
@@ -315,9 +317,10 @@ def build_part(p):
 
 def build_index():
     I = INDEX
-    h = [head(SITE['title'] + ' — ' + SITE['subtitle'], I['desc'], 'og_index', ''), nav([('#howto', '읽는 법'), ('#parts', '편 목록'), ('#map', '전체 흐름'), ('#cast', '등장인물'), ('#source', '원리와 출처')])]
+    h = [head(SITE['title'] + ' — ' + SITE['subtitle'], I['desc'], 'og_index', ''), nav([('#phase', '위상 사고'), ('#howto', '읽는 법'), ('#parts', '편 목록'), ('#map', '전체 흐름'), ('#cast', '등장인물'), ('#source', '원리와 출처')])]
     h.append(cover('cover_index', I['cover_alt'], I['cast']))
     h.append('<header class="hero"><div class="wrap"><span class="kicker">%s</span>\n<h1>%s</h1>\n<p class="lead">%s</p>\n%s</div></header>\n' % (I['kicker'], I['h1'], I['lead'], byline()))
+    h.append(prologue_html(figure, talk))
     h.append(three_box(I))
     h.append(I['body'](figure, chimg, flowgrid, talk))
     h.append(kg_block(I))
@@ -332,6 +335,7 @@ def build_practice():
          nav([('#' + t, n) for t, n in P['tabs']] + [('#wrap', '마무리')], root)]
     h.append(cover('cover_07', P['cover_alt'], P['cast'], root))
     h.append('<header class="hero"><div class="wrap"><span class="kicker">7부 · 마지막 장</span><h1>실전 연습장</h1>\n<p class="lead">%s</p>\n%s</div></header>\n' % (P['lead'], byline()))
+    h.append(NOTICE % '../')
     h.append(P['body'])
     h.append(kg_block(P, root))
     h.append(footer(P, root))
@@ -340,7 +344,7 @@ def build_practice():
 
 def build_js():
     B = os.path.join(ROOT, 'build')
-    parts = ['js_common.js', 'js_draw.js', 'js_p1.js', 'js_p2.js', 'js_p3.js', 'js_p4.js', 'js_p5.js', 'js_p6.js', 'js_practice.js', 'js_tail.js']
+    parts = ['js_common.js', 'js_draw.js', 'js_p0.js', 'js_p1.js', 'js_p2.js', 'js_p3.js', 'js_p4.js', 'js_p5.js', 'js_p6.js', 'js_practice.js', 'js_tail.js']
     src = '/* 구조 먼저 그리기 연구실 · 웃음 편 — 실험 패널 모음 (외부 라이브러리 없음) */\n(function(){\n\'use strict\';\n'
     for f in parts:
         src += '\n/* ---- %s ---- */\n' % f + open(os.path.join(B, f)).read()

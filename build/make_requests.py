@@ -255,6 +255,36 @@ def write_bundle():
             w.writerow(list(r) + ['done'])
     open(os.path.join(D3, 'README.md'), 'w').write('# 그림 요청 꾸러미 3 — 연습 과제 예상 결과 (%d장)\n\n각 부 \'프롬프트 연습 과제\'의 예상 결과 그림입니다. 과제 프롬프트를 **새 대화**에서 그대로 넣어 만듭니다. 받으면 `checklist.csv` 이름 그대로 주세요.\n' % len(rows3))
 
+    D4 = os.path.join(ROOT, 'docs', 'image_requests_phase')
+    shutil.rmtree(D4, ignore_errors=True)
+    os.makedirs(os.path.join(D4, 'prompts'))
+    from content_phase import PH_PROMPTS, PH_ORDER
+    groups4 = [('P01_phase_key_lineup', PH_ORDER[:4]), ('P02_phase_lineup_collapse', PH_ORDER[4:])]
+    rows4 = []
+    for cid, names in groups4:
+        refs = sorted(set(r for n in names for r in PH_PROMPTS[n][1]))
+        t = '# %s · 프롤로그 위상 전환 사고 (16:9) — %s\n\n**첨부:** %s\n\n**Genspark에 먼저 붙여 넣기 ↓**\n%s' % (cid, ', '.join(names), ext_refs(refs), INTRO_BODY)
+        t += '\n> 이번 그림은 **한 그림 안에서 그림체를 일부러 섞는** 요청입니다. 그림체는 바뀌어도 고정값(머리 모양·장식·안경)은 꼭 지켜 달라고 같이 말해 주세요.\n'
+        for i, n in enumerate(names):
+            alt_, refs_, p_ = PH_PROMPTS[n]
+            t += '\n---\n## %d) %s\nalt: %s\n첨부: %s\n```\n%s\n```\n' % (i + 1, n, alt_, ext_refs(refs_), p_)
+            rows4.append((len(rows4) + 1, cid, n, 'index.html#phase', '16:9', 'mixed styles'))
+        open(os.path.join(D4, 'prompts', cid + '.md'), 'w').write(t)
+    with open(os.path.join(D4, 'checklist.csv'), 'w', newline='') as f:
+        w = csv.writer(f)
+        w.writerow(['order', 'conversation', 'file', 'page', 'ratio', 'how', 'status'])
+        for r in rows4:
+            w.writerow(list(r) + ['todo'])
+    open(os.path.join(D4, 'README.md'), 'w').write(README4 % len(rows4))
+    zp4 = os.path.join(ROOT, 'docs', '구조먼저그리기연구실_웃음편_위상전환_그림요청.zip')
+    with zipfile.ZipFile(zp4, 'w', zipfile.ZIP_DEFLATED) as z:
+        for dp, dn, fn in os.walk(D4):
+            for f in fn:
+                full = os.path.join(dp, f)
+                z.write(full, os.path.join('4_위상전환_%d장' % len(rows4), os.path.relpath(full, D4)))
+        for r in sorted(set(r for n in PH_ORDER for r in PH_PROMPTS[n][1])):
+            z.write(os.path.join(ROOT, 'assets', 'refs', r + '.png'), os.path.join('refs', r + '.png'))
+
     zp = os.path.join(ROOT, 'docs', '구조먼저그리기연구실_웃음편_그림요청_전체.zip')
     with zipfile.ZipFile(zp, 'w', zipfile.ZIP_DEFLATED) as z:
         for sub, d in (('1_본문_표지_실패_%d장' % len(rows1), D1), ('2_비교그림_%d장' % len(rows2), D2), ('3_연습과제_%d장' % len(rows3), D3)):
@@ -300,6 +330,20 @@ README1 = '''# 그림 요청 꾸러미 1 — 표지·본문·실패 그림 (%d�
 
 ## 4. 실패 그림 주의
 도구가 실수를 자동으로 고쳐 그리면 두 번까지만 다시 시도해 주세요. 그래도 안 되면 그대로 주셔도 됩니다(페이지에서 '결과는 매번 다르다'는 사례로 설명합니다).
+'''
+README4 = '''# 그림 요청 꾸러미 4 — 프롤로그 '위상 전환 사고' (%d장)
+
+목차 맨 앞 프롤로그(index.html#phase)에 넣을 그림입니다. 설정: 박사의 '위상 전환기'를 주판봇이 눌러, 연구실 식구들의 그림 형태(픽셀·SD·애니·반실사·스티커)가 무작위로 바뀌었다.
+
+| 순서 | 파일 | 그림 |
+|---|---|---|
+| 1 | `prompts/P01_phase_key_lineup.md` | ph_key(대표 그림), ph_lineup_haru·sia·moa |
+| 2 | `prompts/P02_phase_lineup_collapse.md` | ph_lineup_doc, ph_collapse(위상 붕괴), ph_restore(고정값 되돌리기) |
+
+- 그림체를 섞어도 **고정값**(하루 번 2개·앞머리 남색 줄 / 시아 장식 없는 흑발·은 귀걸이 / 모아 흰 머리띠·왼쪽 귀 리본 / 박사 흰 앞머리 줄·굵은 눈썹·청록 안경)은 꼭 지킵니다. 단 ph_collapse는 거울 속 모습만 일부러 고정값을 바꿉니다.
+- 네 위상 나란히(ph_lineup_*)는 1차 결과에서 가장 잘 된 방식(한 그림에 패널 나란히)입니다. 픽셀 패널이 매끈하게 나오면 "visible square pixels like a 16-bit game sprite"를 한 번 더 강조해 주세요.
+- 모두 성인 캐릭터입니다. SD·픽셀로 그려도 어려 보이면 다시 생성해 주세요.
+- 받으면 `checklist.csv` 이름 그대로(png) 주세요.
 '''
 README2 = '''# 그림 요청 꾸러미 2 — '프롬프트로 직접 만들어 보기' 비교 그림 (%d장)
 
