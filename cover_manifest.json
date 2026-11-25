@@ -105,6 +105,13 @@
     "p6_f1_fixed",
     "p6_f1_fixed_b",
     "p6_f7_fixed",
-    "p6_f7_fixed_b"
+    "p6_f7_fixed_b",
+    "ph_collapse",
+    "ph_key",
+    "ph_lineup_doc",
+    "ph_lineup_haru",
+    "ph_lineup_moa",
+    "ph_lineup_sia",
+    "ph_restore"
   ]
 }

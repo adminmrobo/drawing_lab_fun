@@ -64,6 +64,16 @@ PH_PROMPTS = {
                    + HARU + ' holds both hair buns; ' + SIA + ' tucks her long black hair behind her ear to show the silver earring; ' + MOA + ' straightens the white ribbon over her LEFT ear; '
                    + DOC + ' pushes up his teal rectangular glasses. Behind them ' + BOT + ' sits in front of the machine with a big bandage on the red button, sheepish.\nPlain white background.\n' + END),
 }
+# 받은 그림(2026-11-26)을 직접 보고 적은 그림 설명 — 요청과 다른 곳은 있는 그대로
+PH_ACTUAL = {
+    'ph_key': '위상 전환 사고 — 주판봇이 빨간 버튼을 누르자 기계에서 무지개빛 연기가 솟고, 모습이 제각각 바뀐 연구실 식구들이 놀라는 장면. 박사는 흰 테두리 스티커처럼, 시아는 SD로 바뀜(하루가 픽셀, 모아가 반실사로 바뀌라는 요청은 약하게 나와 둘 다 애니풍에 가까움)',
+    'ph_lineup_haru': '하루의 네 위상 — 손을 흔드는 같은 자세의 픽셀·SD·애니·반실사 하루. 네 모습 모두 번 2개·앞머리 남색 줄·라벤더 후드',
+    'ph_lineup_sia': '시아의 네 위상 — 손을 모은 같은 자세의 픽셀·SD·애니·반실사 시아. 네 모습 모두 장식 없는 흑발',
+    'ph_lineup_moa': '모아의 네 위상 — 찻잔 쟁반을 든 같은 자세의 픽셀·SD·애니·반실사 모아. 머리띠와 리본은 그대로지만, 무릎 위 치마에 흰 양말·로퍼라 학생복 느낌이 조금 남',
+    'ph_lineup_doc': '박사의 네 위상 — 안경을 올리는 같은 자세의 픽셀·SD·애니·반실사 박사. 네 모습 모두 흰 앞머리 줄·굵은 눈썹·청록 안경',
+    'ph_collapse': '위상 붕괴 — 거울 속 모아는 금발에 초록 눈, 거울 속 박사는 단정한 갈색 머리에 둥근 검은 안경. 진짜 두 사람이 물음표를 띄우고 거울을 봄',
+    'ph_restore': '고정값 되돌리기 — 하루는 번을, 시아는 귀걸이를, 모아는 리본을, 박사는 안경을 만지며 원래 모습으로 돌아온 단체 장면. 옆의 주판봇 버튼에는 반창고가 붙어 있음',
+}
 PH_ORDER = ['ph_key', 'ph_lineup_haru', 'ph_lineup_sia', 'ph_lineup_moa', 'ph_lineup_doc', 'ph_collapse', 'ph_restore']
 
 
@@ -71,7 +81,7 @@ def prologue_html(figure, talk):
     h = ['<section class="room" id="phase"><div class="wrap"><div class="roomno">프롤로그 · 읽기 전에 꼭</div>',
          '<h2>긴급 공지 — 연구실 위상 전환 사고</h2>',
          '<p class="muted">이 사이트 그림을 넘기다 보면 같은 하루가 표지에서는 게임 속 점 그림, 본문에서는 머리가 큰 꼬마 체형, 어떤 곳에서는 7등신으로 나옵니다. 잘못 그린 것이 아닙니다. 사고가 있었습니다.</p>']
-    h.append(figure('ph_key', PH_PROMPTS['ph_key'][0]))
+    h.append(figure('ph_key', PH_ACTUAL['ph_key']))
     h.append(talk([('robo', 'e19', '박사님, 이 "위상 전환기"의 빨간 버튼… 한 번만 눌러 봐도 되나요?'),
                    ('doc', 'e15', '안 돼! 그건 아직 다이얼이 고정되지 않아서 무작위로—'),
                    ('robo', 'e20', '…이미 눌렀습니다. 그것도 연타로.'),
@@ -89,11 +99,11 @@ def prologue_html(figure, talk):
              '<div id="pp-p0_phase" data-panel="p0_phase"></div><div class="ctrl"><label>누구를 바꿀까 <select name="who"><option value="haru" selected>하루</option><option value="sia">시아</option><option value="moa">모아</option><option value="doc">박사</option></select></label>'
              '<button type="button" class="btn" data-act="zap">빨간 버튼 누르기</button></div><div class="readout" aria-live="polite"></div></div>')
     h.append('<h3>사고 기록 — 이 사람, 같은 사람인가요?</h3><p>전환기 다이얼에 하루·시아·모아·박사의 네 가지 위상을 나란히 걸어 보았습니다. 모습은 넷이지만 고정값은 그대로라 모두 같은 사람으로 보여야 합니다.</p>')
-    h.append('<div class="pair">%s%s</div><div class="pair">%s%s</div>' % tuple(figure(k, PH_PROMPTS[k][0]) for k in ('ph_lineup_haru', 'ph_lineup_sia', 'ph_lineup_moa', 'ph_lineup_doc')))
+    h.append('<div class="pair">%s%s</div><div class="pair">%s%s</div>' % tuple(figure(k, PH_ACTUAL[k]) for k in ('ph_lineup_haru', 'ph_lineup_sia', 'ph_lineup_moa', 'ph_lineup_doc')))
     h.append('<h3>위상 붕괴 — 고정값까지 바뀌어 버린 날</h3>'
              '<p>버튼을 너무 세게 누른 날에는 고정값까지 바뀌었습니다. 이때는 위상이 바뀐 것이 아니라 <b>다른 사람</b>이 된 것입니다. 실제로 이 사이트에도 그런 그림이 두 장 있습니다: '
              '<a href="05_ai_fun.html#make1">5부 리액션 짤 B</a>(참고 그림 없이 만들었더니 네 명 모두 다른 사람)와 <a href="06_failure_lab.html#f8">6부 f8 컷마다 다른 얼굴</a>(모아의 머리색·눈 색이 컷마다 바뀜).</p>')
-    h.append('<div class="pair">%s%s</div>' % (figure('ph_collapse', PH_PROMPTS['ph_collapse'][0]), figure('ph_restore', PH_PROMPTS['ph_restore'][0])))
+    h.append('<div class="pair">%s%s</div>' % (figure('ph_collapse', PH_ACTUAL['ph_collapse']), figure('ph_restore', PH_ACTUAL['ph_restore'])))
     h.append(talk([('doc', 'e07', '그래서 이 편의 모든 프롬프트에는 고정값 문장과 기준 그림이 붙어 있다. 위상은 바뀌어도 괜찮지만, 고정값이 바뀌면 다른 사람이다.'),
                    ('fly', 'e10', '읽으면서 그림마다 고정값 찾기를 해 봐. 웃음 편의 숨은 놀이야.'),
                    ('robo', 'e16', '그럼 저는 다음 편에서 또 눌러도…'),
