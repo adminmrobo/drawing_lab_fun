@@ -55,7 +55,7 @@ def index_body(figure, chimg, flowgrid, talk):
     h.append('<section id="cast"><div class="wrap"><h2>등장인물</h2>%s<p class="hint">모든 등장인물은 성인입니다(하루·시아·모아는 20대, 박사는 30대 성인 남성). 머리를 크게 그리는 SD는 개그 그림체일 뿐 나이와 상관없습니다.</p></div></section>\n'
              % talk([(w, e, t) for w, e, t in cast]))
     h.append('''<section id="source"><div class="wrap"><h2>원리와 출처</h2><div class="box">
-<p>애니메이션 원리(예비동작, 찌그러짐과 늘어남, 타이밍, 과장)는 Thomas·Johnston 『The Illusion of Life』(1981)와 Richard Williams 『The Animator's Survival Kit』(2001), 컷과 컷 사이를 메워 읽는 원리는 Scott McCloud 『Understanding Comics』(1993), 웃음이 기대의 어긋남과 그 풀림에서 나온다는 설명은 Suls(1972)와 McGraw·Warren(2010)을 참고했습니다. 책의 그림·문장·도식·구성 순서는 옮기지 않았고, 연구실 캐릭터와 직접 움직이는 실험으로 새로 구성했습니다.</p>
+<p>애니메이션 원리(예비동작, 찌그러짐과 늘어남, 타이밍, 과장)는 Thomas·Johnston 『The Illusion of Life』(1981)와 Richard Williams 『The Animator's Survival Kit』(2001), 컷과 컷 사이를 메워 읽는 원리는 Scott McCloud 『Understanding Comics』(1993), 웃음이 기대의 어긋남과 그 풀림에서 나온다는 설명은 Suls(1972)와 McGraw·Warren(2010)을 참고했습니다.</p>
 <p>2부의 '올려다보기 챌린지'는 인터넷에서 유행한, 한 장면을 여러 사람이 자기 화풍으로 다시 그리는 놀이입니다. 이 페이지는 놀이의 형식만 빌리고, 원작 캐릭터 대신 연구실 캐릭터로만 그립니다.</p>
 <p>AI 그림·영상의 바탕 기술(잠재 확산 모델 2022, RePaint 2022, Stable Video Diffusion 2023)은 각 페이지 바닥글에 출처로 적었습니다. 웃음 점수·확률·각도 등 모든 숫자는 원리를 보이기 위한 예시값입니다.</p></div></div></section>
 ''')
